@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dave Cole</title>
+    <title>{{site.title}}</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,15 +15,17 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Dave Cole</h1>
+        <h1>{{site.title}}</h1>
 
-        <p class="view"><a href="https://twitter.com/dhcole">Twitter</a></p>
-        <p class="view"><a href="https://github.com/dhcole">GitHub</a></p>
-        <p class="view"><a href="mailto:dhcole@gmail.com">Email</a></p>
+        <p class="view"><a href="https://pinboard.in/u:dhcole/t:writing/#">Writing</a></p>
+        <p class="view"><a href="https://twitter.com/dhcole">Tweets</a></p>
+        <p class="view"><a href="https://github.com/dhcole">Code</a></p>
+        <p class="view"><a href="https://pinboard.in/u:dhcole/t:press/?sort=date#">Press</a></p>
+        <p class="view"><a href="mailto:dave@dhcole.com">Contact</a></p>
 
       </header>
       <section>
-
+        {{content}}
       </section>
       <footer>
       </footer>
